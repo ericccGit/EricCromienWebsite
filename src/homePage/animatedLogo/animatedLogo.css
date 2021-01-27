@@ -1,0 +1,60 @@
+.Logo-area {
+  background-color: #636975;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.AnimatedLogoPeice-0,
+.AnimatedLogoPeice-1,
+.AnimatedLogoPeice-2,
+.AnimatedLogoPeice-3,
+.AnimatedLogoPeice-4,
+.AnimatedLogoPeice-5 {
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  left: 300px;
+}
+
+/* decimal comes from
+  delay = rotation time / 2pi 
+  which i think wortks out but the svgs will need to be perfectly sized
+  also p2 is not rotated properly, and the order should really be changed,
+  the bottom peice should come first
+  */
+@media (prefers-reduced-motion: no-preference) {
+  .AnimatedLogoPeice-0 {
+    animation: App-logo-spin 5s linear 2s, App-logo-move 2s linear 0s;
+  }
+
+  .AnimatedLogoPeice-1 {
+    animation: App-logo-spin 5s linear 2.833s, App-logo-move 2s linear 0.833s;
+  }
+
+  .AnimatedLogoPeice-2 {
+    animation: App-logo-spin 5s linear 3.66s, App-logo-move 2s linear 1.666s;
+  }
+
+  .AnimatedLogoPeice-3 {
+    animation: App-logo-spin 5s linear 4.5s, App-logo-move 2s linear 2.5s;
+  }
+
+  .AnimatedLogoPeice-4 {
+    animation: App-logo-spin 5s linear 5.33s, App-logo-move 2s linear 3.333s;
+  }
+
+  .AnimatedLogoPeice-5 {
+    animation: App-logo-spin 5s linear 6.166s, App-logo-move 2s linear 4.166s;
+  }
+}
+
+.App-logo-filler {
+  height: 20vmin;
+  pointer-events: none;
+}
+
+.logo-peice {
+  height: 20vmin;
+  pointer-events: none;
+}
